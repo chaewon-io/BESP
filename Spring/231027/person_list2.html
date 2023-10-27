@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		{{#personList}}
+		<tr>
+			<td>{{id}}</td>
+			<td><a href="/person/view/{{id}}">{{name}}</a></td>
+			<td>{{phone}}</td>
+			<td>{{email}}</td>
+		</tr>
+		{{/personList}}
+	</table>
+</body>
+</html>
