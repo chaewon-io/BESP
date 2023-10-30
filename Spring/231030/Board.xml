@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mybatis 기술문서에 보면 resultMap, parameterMap
+	원래 db 필드 값이 item1,item2, ,,, 내 Dto랑 안맞으면
+	map은 두 개를 mapping 시켜야 할 때 xml로 기술한다. -->
+<mapper namespace="Board">
+	<select id="Board_getList" resultType="BoardDto" parameterType="BOardDto">
+	select
+		A.seq
+		,A.title
+		,A.writer
+		,A.hit
+		,A.contents
+		,A.wdate
+	from tb_board A
+	</select>
+	
+</mapper>
