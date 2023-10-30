@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>score_list</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>이름</th>
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+                <th>총점</th>
+                <th>평균</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#scoreList}}
+            <tr>
+                <td>{{id}}</td>
+                <td><a href="/score/view/{{id}}">{{name}}</a></td>
+                <td>{{korean}}</td>
+                <td>{{english}}</td>
+                <td>{{math}}</td>
+                <td>{{total}}</td>
+                <td>{{average}}</td>
+            </tr>
+            {{/scoreList}}
+        </tbody>
+    </table>
+</body>
+</html>

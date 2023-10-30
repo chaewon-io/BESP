@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>score_write</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<form method="post" action="/score/save" name="sform" id="sform">
+		
+		아이디 : <input type="text" name="id" id="id" /><br/>
+		이름 : <input type="text" name="name" id="name" /><br/>
+		국어 : <input type="text" name="korean" id="korean" /><br/>
+	    영어 : <input type="text" name="english" id="english" /><br/>
+	    수학 : <input type="text" name="math" id="math" /><br/>
+	
+		<button type="button" id="btnJquery">jquery로 저장하기</button> <br/>
+		
+	</form>
+</body>
+</html>
+<script>
+	// Jquery로 저장하기 
+	$(document).ready(function(){
+		let btn = $("#btnJquery");
+		btn.click(function(){
+			$("#sform").prop("method", "post");
+			$("#sform").prop("action", "/score/save");
+			$("#sform").submit();
+		})
+	});
+</script>
