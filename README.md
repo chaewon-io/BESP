@@ -13,3 +13,4 @@
 | 4    | [231027](https://velog.io/@chaewon22/BESP231027-회고-Spring-Mustache-기초-2)   | - Spring Mustache 기초 2 & Ajax | ✅  
 | 5    | [231030](https://velog.io/@chaewon22/BESP231030-회고-MyBatis-컨테이너-기초)   | - MyBatis & 컨테이너 기초 | ✅  
 | 6    | [231031](https://velog.io/@chaewon22/231031-SQL-프로시저와-서브쿼리를-활용한-데이터-페이징)   | - SQL 프로시저와 서브쿼리를 활용한 데이터 페이징 | ✅  
+| 7    | [231101](https://velog.io/@chaewon22/231101-카카오-우편서비스-로그인과-세션-관리-쿠키-토큰-방법-차이)   | - 카카오 우편서비스 & 로그인과 세션 관리 (쿠키, 토큰 방법 차이) | ✅  
